@@ -3,6 +3,73 @@
 	<Storages Current="0">
 		<Child Name="Default Configuration" />
 	</Storages>
-	<Nodes Name="NameMapping" Key="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}" />
-	<LogicalNodes Name="Aliases" Owner="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}" />
+	<Nodes Name="NameMapping" Key="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}">
+		<Children>
+			<Child Name="Sys" Key="{C858C6ED-76BB-43D5-85F5-CC32B0EE1BEE}">
+				<Properties>
+					<Property Name="Name">
+						<Value Value="Sys" />
+					</Property>
+				</Properties>
+				<Children>
+					<Child Name="browser" Key="{51496BF3-B623-47A7-9F1A-E0141C738BA0}">
+						<Properties>
+							<Property Name="ObjectType">
+								<Value Value="Browser" />
+							</Property>
+						</Properties>
+						<Children>
+							<Child Name="BrowserWindow" Key="{B736291D-E287-4DC7-9DA5-6006A18B950E}">
+								<Image FileName="1222991321" Left="-8" Top="-8" Right="1928" Bottom="1048" />
+								<Properties>
+									<Property Name="ObjectType">
+										<Value Value="BrowserWindow" />
+									</Property>
+									<Property Name="ObjectIdentifier">
+										<Value Value="2" Type="0" />
+									</Property>
+								</Properties>
+							</Child>
+							<Child Name="pageLoadninjaVideoCenterSmartbea" Key="{D9F008A6-259C-4DAB-A378-EED3A8C20EBF}">
+								<Image FileName="1222991321" Left="0" Top="87" Right="1920" Bottom="1040" />
+								<Properties>
+									<Property Name="ObjectType">
+										<Value Value="Page" />
+									</Property>
+									<Property Name="URL">
+										<Value Value="https://support.smartbear.com/loadninja/videos/" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="textnode" Key="{5DEC4A7D-AF2A-4932-9A2F-D30A30F7ACED}">
+										<Image FileName="1222991321" Left="0" Top="87" Right="1903" Bottom="2052" />
+										<TypeInfo Item0="{6AF04EF9-C505-4576-A064-A894040586FF}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//body[contains(., &apos;You need to enable JavaScript to run this website.&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//body[contains(@class, &apos;support-product&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//body" />
+											</Selector>
+										</Selectors>
+									</Child>
+								</Children>
+							</Child>
+						</Children>
+					</Child>
+				</Children>
+			</Child>
+		</Children>
+	</Nodes>
+	<LogicalNodes Name="Aliases" Owner="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}">
+		<Child Name="browser" Owner="{51496BF3-B623-47A7-9F1A-E0141C738BA0}">
+			<Child Name="BrowserWindow" Owner="{B736291D-E287-4DC7-9DA5-6006A18B950E}" />
+			<Child Name="pageLoadninjaVideoCenterSmartbea" Owner="{D9F008A6-259C-4DAB-A378-EED3A8C20EBF}">
+				<Child Name="textnode" Owner="{5DEC4A7D-AF2A-4932-9A2F-D30A30F7ACED}" />
+			</Child>
+		</Child>
+	</LogicalNodes>
 </Root>
